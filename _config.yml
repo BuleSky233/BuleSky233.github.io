@@ -5,7 +5,7 @@ header-img: img/home-bg-he.png
 email: yes233233@outlook.com
 description: "Zongyou Liu的博客"
 keyword: "Zongyou Liu, Zongyou Liu的博客"
-url: "http://RainbomSea.github.io"          # your host, for absolute URL
+url: "http://BuleSky233.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/RainbomSea/RainbomSea.github.io.git" #code repository | 代码仓库
 
