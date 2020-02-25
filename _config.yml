@@ -1,10 +1,10 @@
 # Site settings | 网站设置
-title: RainbomSea
-SEOTitle: RainbomSea的博客 | RaimbomSea
+title: Zongyou Liu
+SEOTitle: Zongyou Liu的博客 | Zongyou Liu
 header-img: img/home-bg-he.png
-email: RainbomSea@qq.com
-description: "RainbomSea的博客"
-keyword: "RainbomSea, RainbomSea的博客, rainbom sea, rainbomsea, Python blog"
+email: yes233233@outlook.com
+description: "Zongyou Liu的博客"
+keyword: "Zongyou Liu, Zongyou Liu的博客"
 url: "http://RainbomSea.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/RainbomSea/RainbomSea.github.io.git" #code repository | 代码仓库
@@ -12,7 +12,7 @@ github_repo: "https://github.com/RainbomSea/RainbomSea.github.io.git" #code repo
 
 # Sidebar settings | 侧边栏设置
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "就算这样,也要笑着去努力啊!"
+sidebar-about-description: "to strive,to seek ,to find and not to yield"
 sidebar-avatar: /img/head.jpg      # 头像
 
 
