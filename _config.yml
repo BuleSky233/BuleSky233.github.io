@@ -92,13 +92,13 @@ service-worker: true
 friends: [
     {
         title: "GitHub·RainbomSea",
-        href: "http://RainbomSea.github.io"
+        href: "http://BuleSky233.github.io"
     },{
         title: "CSDN·RainbomSea",
-        href: "https://blog.csdn.net/qq_39268193"
+        href: "https://blog.csdn.net/qq_43209705"
     },{
         title: "知乎·RainbomSea",
-        href: "https://www.zhihu.com/people/RainbomSea"
+        href: "https://www.zhihu.com"
     },{
         title: "GitBook·RainbomSea",
         href: "https://legacy.gitbook.com/@rainbomsea"
