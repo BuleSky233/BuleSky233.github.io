@@ -91,16 +91,16 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "GitHub·RainbomSea",
+        title: "GitHub·Zongyou Liu",
         href: "http://BuleSky233.github.io"
     },{
-        title: "CSDN·RainbomSea",
+        title: "CSDN·Zongyou Liu",
         href: "https://blog.csdn.net/qq_43209705"
     },{
-        title: "知乎·RainbomSea",
+        title: "知乎·Zongyou Liu",
         href: "https://www.zhihu.com"
     },{
-        title: "GitBook·RainbomSea",
+        title: "GitBook·Zongyou Liu",
         href: "https://legacy.gitbook.com/@rainbomsea"
     }
 ]
