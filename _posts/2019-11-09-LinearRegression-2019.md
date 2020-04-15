@@ -11,7 +11,7 @@ tags:                               #标签
 ---
 ## 实验过程  
 在线性回归中分别使用BGD和SGD的方法进行迭代，训练过程中使用BGD和SGD对应的损失函数值如图1所示，训练后对测试集的测试结果与真实值的比较如图3所示（图3对X和Y进行了标准化） 
-![梯度下降](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/linear1.png)
+![linear1](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/linear1.png)
 ![linear2](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/linear2.png)
 ![linear3](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/linear3.png) 
 ### 下讨论BGD和SGD的区别：
