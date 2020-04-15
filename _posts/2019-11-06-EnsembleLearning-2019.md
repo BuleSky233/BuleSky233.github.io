@@ -22,6 +22,7 @@ tags:                               #标签
    对数据进行了标准化，并划分训练集和测试集
 2. 用训练集训练集成式分类器
 3. 用测试集对集成式分类器进行检验 
+
 ## 实验结果：
 ![ensemble2](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/ensemble2.png)
 ## 对比实验：
