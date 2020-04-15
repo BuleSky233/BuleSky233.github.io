@@ -1,6 +1,6 @@
 ---
 layout:     post                    # 使用的布局（不需要改）
-title:      Project4: Ensemble Classification               # 标题 
+title:      Project4: Ensemble Learning               # 标题 
 subtitle:   assignment of Machine Learning course #副标题
 date:       2019-11-06             # 时间
 author:     Zongyou Liu                      # 作者
