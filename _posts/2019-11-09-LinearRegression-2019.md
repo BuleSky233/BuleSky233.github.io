@@ -1,6 +1,6 @@
 ---
 layout:     post                    # 使用的布局（不需要改）
-title:      Linear Regression               # 标题 
+title:      Project1:Linear Regression               # 标题 
 subtitle:   assignment of Machine Learning course  #副标题
 date:       2019-11-09              # 时间
 author:     Zongyou Liu             # 作者
