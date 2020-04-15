@@ -43,7 +43,7 @@ tags:                               #标签
 logistic 回归也有一些缺点，比如因为它本质上是一个线性的分类器，所以处理不好特征之间相关的情况。且当特征空间很大时，
 logistic 回归的收敛速度会很慢，性能不高。
 ## 源代码：
-代码源文件在我的github中
+代码源文件在[我的github](https://github.com/BuleSky233/LogisticRegression)中
 ```
 # -*- coding: utf-8 -*-
 import pandas as pd
