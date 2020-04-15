@@ -21,7 +21,7 @@ tags:                               #标签
 1. 数据预处理  
    对数据进行了标准化，并划分训练集和测试集
 2. 用训练集训练集成式分类器
-3. 用测试集对集成式分类器进行检验 
+3. 用测试集对集成式分类器进行检验
 
 ## 实验结果：
 ![ensemble2](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/ensemble2.png)
@@ -45,7 +45,6 @@ from sklearn.metrics import classification_report
 from sklearn.tree import DecisionTreeClassifier
 import numpy as np
 import prettytable as pt
-
 
 class CollectiveClassifier:
     def __init__(self):
@@ -138,9 +137,9 @@ class CollectiveClassifier:
             tb.add_row(result[i])
         print("集成式分类器各类别的评价指标为")
         print(tb)
-```
+``` 
 CollectiveClassification.py:
-```
+``` 
 # -*- coding: utf-8 -*-
 from sklearn.metrics import classification_report
 from sklearn.model_selection import cross_val_score, train_test_split
