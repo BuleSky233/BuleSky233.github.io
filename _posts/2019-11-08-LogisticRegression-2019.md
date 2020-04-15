@@ -27,14 +27,15 @@ tags:                               #标签
 -0.43477088，-0.09529861， -5.77358322，- 1.88129429，-0.18538062，-1.0299963 ，-0.74994012，-1.19881205，- 0.19024502，-1.04144982，-0.37731927，-0.12685026，-
 0.03197163，0.20113023，1.20345509，0.93164543，- 0.22929524，1.24627483，0.49145903]
 训练过程中的似然函数值的变化情况如下图所示，可见似然函数的值在训练过程中不断升高，最终达到收敛 
-
+![logistic1](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/logistic1.png)  
 3.使用训练出的模型对测试集进行测试，检验模型的正确性
 ## 实验结果：
 在测试集中的预测邮件是否是垃圾邮件的正确率达到了 0.94，具体结果如下图所示
-
+![logistic2](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/logistic2.png)
 ## 对比实验：
 调用 sklearn 包里的库函数 LogisticRegression 进行二分类，准确率为 0.93（如下图所示）。可见，我自己编写的 logistic回归
 函数准确率更高，在此数据集下的分类结果要优于 sklearn 包里的库函数。
+![logistic3](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/logistic3.png)
 ## 结果讨论：
 从该数据集上看，利用 logistic 回归进行二分类问题效果很不错，正确率达到了 0.94。且 logistic 回归非常容易实现，使用梯度
 上升法极大化似然函数的求导结果与线性回归是格式统一的，只需在线性回归的代码基础上修改预测函数 h(x)即可。但是
