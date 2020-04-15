@@ -92,7 +92,7 @@ service-worker: true
 friends: [
     {
         title: "GitHub·Zongyou Liu",
-        href: "http://BuleSky233.github.io"
+        href: "https://github.com/BuleSky233"
     },{
         title: "CSDN·Zongyou Liu",
         href: "https://blog.csdn.net/qq_43209705"
