@@ -137,48 +137,49 @@ print(train_Y.shape)
 print(test_Y.shape)
 
 theta = np.zeros([len(X), 1], dtype=float)
-# cur_theta_BGD, step, lost_BGD = logistic_regression(train_X, train_Y, theta)
-#
-# picturex_BGD=np.arange(len(lost_BGD))
-# ax = plt.subplot(111)
-# plt.plot(picturex_BGD,lost_BGD,color='blue')
-# plt.title(" the trend of likely function in training")
-# ax.set_xlabel("step")
-# ax.set_ylabel("value")
-# plt.savefig("./likely_function.png")
-# plt.show()
-#
-# print(cur_theta_BGD)
-# predict_BGD = logist(np.dot(test_X.T, cur_theta_BGD))
-#
-# predict_Y = []
-# # 预测正确的邮件数
-# predict_spam = 0
-# predict_good = 0
-# # 测试集里的邮件数
-# test_good = 0
-# test_spam = 0
-#
-# for i in test_Y:
-#     if i[0] == 1:
-#         test_spam += 1
-#     else:
-#         test_good += 1
-#
-# for i in predict_BGD:
-#     if i[0] >= 0.5:
-#         predict_Y.append(1)
-#     else:
-#         predict_Y.append(0)
-#
-# for i in range(len(predict_Y)):
-#     if predict_Y[i] == test_Y[i][0]:
-#         if predict_Y[i] == 1:
-#             predict_spam += 1
-#         else:
-#             predict_good += 1
-#
-# print("测试集中的正常邮件数为", test_good, "预测对的正常邮件数为", predict_good)
-# print("测试集中的垃圾邮件数为", test_spam, "预测对的垃圾邮件为", predict_spam)
-# print("总预测正确个数为", (predict_spam + predict_good), "总正确率为", (predict_spam + predict_good) / len(predict_Y))
+cur_theta_BGD, step, lost_BGD = logistic_regression(train_X, train_Y, theta)
+
+picturex_BGD=np.arange(len(lost_BGD))
+ax = plt.subplot(111)
+plt.plot(picturex_BGD,lost_BGD,color='blue')
+plt.title(" the trend of likely function in training")
+ax.set_xlabel("step")
+ax.set_ylabel("value")
+plt.savefig("./likely_function.png")
+plt.show()
+
+print(cur_theta_BGD)
+predict_BGD = logist(np.dot(test_X.T, cur_theta_BGD))
+
+predict_Y = []
+# 预测正确的邮件数
+predict_spam = 0
+predict_good = 0
+# 测试集里的邮件数
+test_good = 0
+test_spam = 0
+
+for i in test_Y:
+    if i[0] == 1:
+        test_spam += 1
+    else:
+        test_good += 1
+
+for i in predict_BGD:
+    if i[0] >= 0.5:
+        predict_Y.append(1)
+    else:
+        predict_Y.append(0)
+
+for i in range(len(predict_Y)):
+    if predict_Y[i] == test_Y[i][0]:
+        if predict_Y[i] == 1:
+            predict_spam += 1
+        else:
+            predict_good += 1
+
+print("测试集中的正常邮件数为", test_good, "预测对的正常邮件数为", predict_good)
+print("测试集中的垃圾邮件数为", test_spam, "预测对的垃圾邮件为", predict_spam)
+print("总预测正确个数为", (predict_spam + predict_good), "总正确率为", (predict_spam + predict_good) / len(predict_Y))
+
 ```
