@@ -21,6 +21,7 @@ tags:                               #标签
 所以，对于样本数不多的数据集，最好用BGD方法迭代，而对于样本数很多的数据集，BGD的迭代速度可能会非常慢，此时SGD也是一个很好的选择。 
 
 ## 源代码
+代码源文件在[我的github](https://github.com/BuleSky233/LinearRegression)中  
 ```
 # coding=utf-8
 import random    
