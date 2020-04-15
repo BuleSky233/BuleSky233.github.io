@@ -11,7 +11,7 @@ tags:                               #标签
 ---
 ## 实验过程  
 在线性回归中分别使用BGD和SGD的方法进行迭代，训练过程中使用BGD和SGD对应的损失函数值如图1所示，训练后对测试集的测试结果与真实值的比较如图3所示（图3对X和Y进行了标准化） 
-！[linear1](https://github.com/BuleSky233/BuleSky233.github.io/raw/master/img/linear1.png)
+![linear1](https://github.com/BuleSky233/BuleSky233.github.io/raw/master/img/linear1.png)
 
 ### 下讨论BGD和SGD的区别：
 1. 由图1可看出，SGD比BGD更快达到一个稳定的较小值，即SGD达到收敛经过的迭代次数少于BGD。实际上这从算法的本质也可看出，SGD是每次算完一个样本就更改一次θ参数，而BGD是算完所有的样本才同时更改全部θ，所以SGD会更快收敛。 
