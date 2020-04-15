@@ -38,7 +38,7 @@ tags:                               #标签
 ## 收获与感悟：
 本次实验使我对kNN、SVM、decision tree等算法的原理更加了解，并学会了如何构建一个集成式分类器，对数据分类的整个流程更加熟悉。
 ## 源代码：
-代码源文件在[我的github](https://github.com/BuleSky233/LogisticRegression)中  
+代码源文件在[我的github](https://github.com/BuleSky233/EnsembleLearning)中  
 CollectiveClassifier.py:
 ```
 from sklearn import neighbors, svm
