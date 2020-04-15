@@ -51,7 +51,7 @@ tags:                               #标签
    ![neuron6](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/neuron6.png)
    输出层输出10个数字，第i个数字代表0-9中数字i的给分，其中最大的即为神经网络的预测结果，如下图所示：
    ![neuron7](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/neuron7.png)
-   可见，神经网络预测的结果与实际情况相符，这一样本预测正确
+   可见，神经网络预测的结果与实际情况相符，这一样本预测正确 
 ## 实验结果：
 使用单层神经网络进行分类对测试集的正确率达到0.91，使用三层神经网络进行分类对测试集的正确率达到0.98。 
 ## 结果讨论：
