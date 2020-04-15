@@ -22,7 +22,7 @@ tags:                               #标签
 2. 搭建神经网络框架，使用单层神经网络，即只有输入层和以softmax作为激活函数的输出层  
 3. 用训练集对神经网络进行训练以学习参数  
 4. 用测试集对模型进行测试以检验模型的正确性  
-![neuron1]()  
+![neuron1](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/neuron1.png)  
 正确率约为0.91，证明分类效果一般，所以我试着通过增加神经网络的层数来提高分类效果  
 ### Ⅱ.三层神经网络
 1. 数据预处理  
@@ -39,17 +39,17 @@ tags:                               #标签
    第五次|0.9763
  
    程序运行的部分截图：
-   ![neuron2]()
-   ![neuron3]()
-   ![neuron4]()
+   ![neuron2](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/neuron2.png)
+   ![neuron3](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/neuron3.png)
+   ![neuron4](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/neuron4.png)
 4. 用测试集对模型进行测试以检验模型的正确性
-   ![neuron5]()
+   ![neuron5](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/neuron5.png)
    可以看出，通过增加神经网络的层数，我们达到的准确率约为0.98，证明分类效果不错。
    下面我选择测试集中的第一个样本来具体看看测试情况：
    该样本的图像为：
-   ![neuron5]()
+   ![neuron6](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/neuron6.png)
    输出层输出10个数字，第i个数字代表0-9中数字i的给分，其中最大的即为神经网络的预测结果，如下图所示：
-   ![neuron6]()
+   ![neuron7](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/neuron7.png)
    可见，神经网络预测的结果与实际情况相符，这一样本预测正确
 ## 实验结果：
 使用单层神经网络进行分类对测试集的正确率达到0.91，使用三层神经网络进行分类对测试集的正确率达到0.98。 
