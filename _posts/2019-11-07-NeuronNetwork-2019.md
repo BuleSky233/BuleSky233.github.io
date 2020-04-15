@@ -9,6 +9,7 @@ catalog: true                       # 是否归档
 tags:                               #标签
     - project 
     - machine learning
+    - deep learning
 ---
 
 ## 实验背景：
