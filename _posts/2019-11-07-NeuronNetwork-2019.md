@@ -38,8 +38,93 @@ tags:                               #标签
    第四次|0.9729
    第五次|0.9763
  
-程序运行的部分截图：
-
+   程序运行的部分截图：
+   ![neuron2]()
+   ![neuron3]()
+   ![neuron4]()
 4. 用测试集对模型进行测试以检验模型的正确性
+   ![neuron5]()
+   可以看出，通过增加神经网络的层数，我们达到的准确率约为0.98，证明分类效果不错。
+   下面我选择测试集中的第一个样本来具体看看测试情况：
+   该样本的图像为：
+   ![neuron5]()
+   输出层输出10个数字，第i个数字代表0-9中数字i的给分，其中最大的即为神经网络的预测结果，如下图所示：
+   ![neuron6]()
+   可见，神经网络预测的结果与实际情况相符，这一样本预测正确
+## 实验结果：
+使用单层神经网络进行分类对测试集的正确率达到0.91，使用三层神经网络进行分类对测试集的正确率达到0.98。 
+## 结果讨论：
+从实验过程可看出，神经网络的分类性能是十分不错的，单层神经网络就可达到0.91的正确率。并且，正确率会随着神经网络层数的增加而提高，神经网络层数越多，神经元数量越多，则能学习到更加复杂的函数，可以实现更加强大的分类功能。但是层数和神经元数量的增加也意味着计算量的大大增加，一个复杂的神经网络可能需要几天的时间才能训练完成，使用GPU可以大大加速运算。
+## 源代码：
+单层神经网络:   
+```
+import tensorflow as tf
+import tensorflow.compat.v1 as tfc
+import matplotlib.pyplot as plt
+import tensorflow_core.examples.tutorials.mnist.input_data as input_data
+
+def main():
+    tf.compat.v1.disable_eager_execution()
+    # data = tf.keras.datasets.mnist
+    # (x_train, y_train), (x_test, y_test) = data.load_data()
+
+    mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
+    # plt.imshow(x_train[1], cmap="binary")
+    # plt.show()
+    sess = tfc.InteractiveSession()
+    x = tfc.placeholder("float", shape=[None, 784])
+    y_ = tfc.placeholder("float", shape=[None, 10])
+    W = tf.Variable(tf.zeros([784, 10]))
+    b = tf.Variable(tf.zeros([10]))
+    sess.run(tfc.initialize_all_variables())
+    y = tf.nn.softmax(tf.matmul(x, W) + b)
+    cross_entropy = -tf.reduce_sum(y_ * tfc.log(y))
+    train_step = tfc.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
+    for i in range(1000):
+        batch = mnist.train.next_batch(50)
+        train_step.run(feed_dict={x: batch[0], y_: batch[1]})
+    correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
+    accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
+
+    print("测试集的正确率为",accuracy.eval(feed_dict={x: mnist.test.images, y_: mnist.test.labels}))
+
+
+if __name__ == '__main__':
+    main()
+```
+三层神经网络:  
+```
+import tensorflow as tf
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+mnist = tf.keras.datasets.mnist
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0
+model = tf.keras.models.Sequential([
+  tf.keras.layers.Flatten(input_shape=(28, 28)),
+  tf.keras.layers.Dense(128, activation='relu'),
+  tf.keras.layers.Dropout(0.2),
+  tf.keras.layers.Dense(10, activation='softmax')
+])
+
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+model.fit(x_train, y_train, epochs=5)
+print("在测试集中")
+model.evaluate(x_test,  y_test, verbose=2)
+plt.imshow(x_test[0], cmap="binary")
+plt.show()
+prediction = model.predict(x_test)
+print("输出层的输出\n",prediction[0])
+print("模型的预测结果为(即输出的10个数中最大数的索引为）",np.argmax(prediction[0]))
+print("该测试样本的真实标签为",y_test[0])
+```
+
+
+
+
 
 
