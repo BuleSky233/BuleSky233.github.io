@@ -11,8 +11,10 @@ tags:                               #标签
     - machine learning
     - data mining
 ---
+
+
 ## 算法流程图：
-![ensemble1]()
+![ensemble1](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/ensemble1.png)
 ## 算法过程：
 该集成式分类器集成了三个分类算法，分别是kNN、SVM和Decision Tree。采用投票的方式将三个分类器的结果综合起来，少数服从多数，如果其中至少两个分类算法都判定样本为A类，则最终判定样本为A类。若三个分类器判断的结果均不同，则随机选取某一分类算法的结果作为最终结果。
 ## 实验过程：
@@ -21,14 +23,14 @@ tags:                               #标签
 2. 用训练集训练集成式分类器
 3. 用测试集对集成式分类器进行检验
 ## 实验结果：
-![ensemble2]()
+![ensemble2](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/ensemble2.png)
 ## 对比实验：
 单个分类器的分类准确率如下图所示：
-![ensemble3]()
+![ensemble3](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/ensemble3.png)
 单个分类器的分类具体评价指标(精确率、召回率等)如下图所示：
-![ensemble4]()
-![ensemble5]()
-![ensemble6]()
+![ensemble4](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/ensemble4.png)
+![ensemble5](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/ensemble5.png)
+![ensemble6](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/ensemble6.png)
 可以看出，由kNN、SVM、decision tree集成的分类器的分类效果要好于它们各自单独的分类效果。可以看出，SVM的分类效果要明显强于kNN和decision tree，而集成式分类器的效果又相比SVM有微小的提高。
 ## 结果分析：
 该集成式分类器具有不错的分类性能，对于本实验数据表准确率达到了0.95，且相比各个分类器单独的分类效果都有提高，但所选用的三个分类器分类效果本身就有不小的差距，所以分类准确率的提高相比于分类性能最好的SVM来说并不显著。如果选用的均为分类效果一般的分类器则可能可以更加发挥集成式分类器的优点，获得更加显著的分类效果提高。
