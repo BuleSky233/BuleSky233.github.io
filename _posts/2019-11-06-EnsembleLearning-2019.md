@@ -23,7 +23,7 @@ tags:                               #标签
 2. 用训练集训练集成式分类器
 3. 用测试集对集成式分类器进行检验  
 ## 实验结果：
-![ensemble2](img/ensemble2.png)
+![ensemble2](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/ensemble2.png)
 ## 对比实验：
 单个分类器的分类准确率如下图所示：
 ![ensemble3](https://raw.githubusercontent.com/BuleSky233/BuleSky233.github.io/master/img/ensemble3.png)
